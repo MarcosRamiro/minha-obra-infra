@@ -9,6 +9,7 @@ services:
       - //var/run/docker.sock:/var/run/docker.sock
     networks:
       - jenkins_network
+    tty: true
 
 
 volumes:
