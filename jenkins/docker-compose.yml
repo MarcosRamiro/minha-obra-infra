@@ -5,7 +5,10 @@ services:
       - "8081:8080"
     volumes:
       - jenkins_home:/var/jenkins_home
-  ssh-agent:
-    image: jenkins/ssh-agent
+      - /var/run/docker.sock:/var/run/docker.sock
 volumes:
   jenkins_home:
+
+networks:
+  jenkins_network:
+    driver: bridge
