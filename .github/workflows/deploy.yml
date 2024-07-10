@@ -11,7 +11,7 @@ on:
 
 
 jobs:
-  build:
+  deploy-nginx:
     runs-on: ubuntu-latest
     steps:
       - name: Github checkout
